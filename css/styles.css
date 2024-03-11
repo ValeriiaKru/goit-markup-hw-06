@@ -560,6 +560,7 @@ background-color: #404bbf;
 @media screen and (min-width: 768px) {
    .team-list {
     gap: 64px 24px;
+    padding: 0 92px;
    } 
 
    .team-list-item {
@@ -706,7 +707,7 @@ padding: 32px 16px;
     margin-bottom: 16px;
 }
 
-.text-blue-footer {
+.span.text-blue-footer {
 color: #f4f4fd;
 }
 
@@ -906,25 +907,6 @@ background-color: #31d0aa;
 
 
 
-.text-blue {
-    color: #2e2f42;
-}
-
-.menu-link.current {
-    color: #404bbf;
-
-}
-
-.menu-link:hover,
-.menu-link:focus {
-    color: #404bbf;
-}
-
-.menu-link:active {
-    color: #404bbf;
-}
-
-
 
 
 /* MOBILE MENU */
@@ -1098,5 +1080,3 @@ background-color: #31d0aa;
     display: none;
 }
 }
-
-/*  */
