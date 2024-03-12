@@ -184,7 +184,6 @@ input {
 @media screen and (min-width:768px){
     .page-header {
             padding: 0;
-            margin-right: 120px;
         }
 
     .logo {
@@ -209,10 +208,15 @@ input {
 }
 
 .address-link {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.7;
-    letter-spacing: 0.04em;
+    color: #434455;
+        font-weight: 400;
+        font-size: 12px;
+        text-decoration: none;
+        font-style: normal;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        display: block;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -231,11 +235,6 @@ input {
             bottom: -1px;
         }
     
-        .address-link {
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-        }
     
         .address-link:hover,
         .address-link:focus {
@@ -430,13 +429,13 @@ input {
 @media screen and (min-width: 768px) {
     .my-main-page {
     max-width: 768px;
-    padding: 112px 0;
+    margin-top: 112px 0;
     }
 
     .main-page {
         line-height: 1.07;
         max-width: 496px;
-        padding-bottom: 36px;
+        margin-bottom: 36px;
         font-size: 56px;
     }
 }
@@ -449,7 +448,7 @@ input {
     }
 
     .main-page {
-        padding-bottom: 48px;
+        margin-bottom: 48px;
     }
 }
  
@@ -518,7 +517,8 @@ input {
 /* TABLET */
 @media screen and (min-width: 768px) {
     .studio-list {
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 72px;
     }
 
     .list-first-page-studio {
@@ -948,7 +948,7 @@ fill: #f4f4fd;
  }
 
     .text-footer-wrap {
-        padding-left: 92px;
+        padding-left: 108px;
     }
 
 
@@ -966,7 +966,7 @@ fill: #f4f4fd;
     }
 
     .foooter-subsription-wrap {
-    padding-left: 92px;
+    padding-left: 108px;
     }
 
     .foooter-subsription-form {
@@ -1288,6 +1288,10 @@ fill: #f4f4fd;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+        .active {
+            color: #404bbf;
+        }
+
     .mobile-menu.is-open {
         opacity: 1;
         pointer-events: auto;
@@ -1331,6 +1335,10 @@ fill: #f4f4fd;
         background-color: #404bbf;
         border: none;
     }
+
+        .mobile-page-address-link.active {
+            color: #404bbf;
+        }
 
     .mobile-menu-close-icon {
         fill: #2e2f42;
@@ -1432,6 +1440,8 @@ fill: #f4f4fd;
         background-color: #404bbf;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+
 }
 
 
