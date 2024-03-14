@@ -344,9 +344,8 @@ input {
 /* MAIN PAGE */
 /* FOR MOBILE */
 
-
-
-.my-main-page {
+@media screen and (max-width:767px) {
+    .my-main-page {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url('../images/backgroundmobile1.jpg');
@@ -367,6 +366,8 @@ input {
             url('../images/backgroundmobile2.jpg');
     }
 }
+}
+
 
 .my-main-page-container {
     display: flex;
@@ -432,6 +433,13 @@ input {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url('../images/backgroundtablet1.jpg');
+            background-size: cover;
+                background-color: #2e2f42;
+                background-repeat: no-repeat;
+                background-position: center;
+                padding: 72px 0;
+                max-width: 768px;
+                margin: 0 auto;
 }
     
 
@@ -460,6 +468,7 @@ input {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url('../images/people-office.jpg');
+            max-width: 1440px;
     padding: 188px 0;
     }
 
@@ -479,12 +488,6 @@ input {
 }
 
 
-
-
-@media screen and (min-resolution: 192dpi)
-.my-main-page {
-
-}
  
 /* ADVANTAGES */
 /* MOBILE */
