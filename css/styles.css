@@ -430,33 +430,54 @@ input {
 
 /* TABLET */
 
-    .my-main-page {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)),
-                url('../images/backgroundtablet1.jpg');
-    max-width: 768px;
-    margin-top: 112px 0;
-    
-    }
-   @media screen and (min-width: 768px) {
+     @media screen and (min-width: 768px) {
 .my-main-page {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url('../images/backgroundtablet2.jpg');
+            url('../images/backgroundtablet1.jpg');
 }
+    
+@media screen and (min-resolution: 192dpi) {
+    .my-main-page {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/backgroundtablet2.jpg');
+    }
+}
+  .main-page {
+      line-height: 1.07;
+      max-width: 496px;
+      margin-bottom: 36px;
+      font-size: 56px;
+  }
+    }
+  
 
+/* DESKTOP */
+
+@media screen and (min-width:1158px) {
+    .my-main-page {
+    max-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/people-office.jpg');
+    padding: 188px 0;
+    }
 
     .main-page {
-        line-height: 1.07;
-        max-width: 496px;
-        margin-bottom: 36px;
-        font-size: 56px;
+        margin-bottom: 48px;
+    }
+
+@media screen and (min-resolution: 192dpi) {
+    .my-main-page {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/people-office2x.jpg');
     }
 }
 
 
-/* DESKTOP */
-
+}
 .my-main-page {
     max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
@@ -465,19 +486,7 @@ input {
     padding: 188px 0;
 }
 
-@media screen and (min-width:1158px) {
-    .my-main-page {
-    max-width: 1440px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url('../images/people-office2x.jpg');
-    padding: 188px 0;
-    }
 
-    .main-page {
-        margin-bottom: 48px;
-    }
-}
 
 @media screen and (min-resolution: 192dpi)
 .my-main-page {
