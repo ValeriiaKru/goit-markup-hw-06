@@ -349,7 +349,7 @@ input {
 .my-main-page {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url('../images/backgroundmobile1-min.jpg');
+        url('../images/backgroundmobile1.jpg');
     background-size: cover;
     background-color: #2e2f42;
     background-repeat: no-repeat;
@@ -364,7 +364,7 @@ input {
     .my-main-page {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url('../images/backgroundmobile2-min.jpg');
+            url('../images/backgroundmobile2.jpg');
     }
 }
 
@@ -431,14 +431,16 @@ input {
 .my-main-page {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url('../images/backgroundtablet1-min.jpg');
+            url('../images/backgroundtablet1.jpg');
 }
     
+
+
 @media screen and (min-resolution: 192dpi) {
     .my-main-page {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url('../images/backgroundtablet2-min.jpg');
+            url('../images/backgroundtablet2.jpg');
     }
 }
   .main-page {
@@ -457,7 +459,7 @@ input {
     max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url('../images/people-office-min.jpg');
+            url('../images/people-office.jpg');
     padding: 188px 0;
     }
 
@@ -469,7 +471,7 @@ input {
     .my-main-page {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url('../images/people-office2x-min.jpg');
+            url('../images/people-office2x.jpg');
     }
 }
 
