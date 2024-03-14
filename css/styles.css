@@ -88,7 +88,7 @@ input {
     border-bottom: 1px solid #E7E9FC;
     top: 0;
     padding: 16px 0;
-    z-index: 999999;
+    z-index: 9999;
     background-color: #fff;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
         0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
@@ -131,8 +131,8 @@ input {
     .menu-open-btn {
         position: relative;
             display: block;
-            justify-content: center;
-            align-items: center;
+            
+            
             width: 24px;
             height: 24px;
             border: none;
@@ -222,6 +222,7 @@ input {
 
     .menu-open-btn {
       display: none;  
+      margin-left: auto;
     }
 
         .menu-link.current::after {
@@ -275,7 +276,9 @@ input {
 /* */
 /*  FOR DESKTOP */
 @media screen and (min-width:1158px) {
-   
+   .my-main-page {
+    
+   }
 
     .logo {
         margin-right: 76px;
@@ -344,12 +347,27 @@ input {
 /* MAIN PAGE */
 /* FOR MOBILE */
 
+
+
+.my-main-page {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url('../images/backgroundmobile1.jpg');
+    background-size: cover;
+    background-color: #2e2f42;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 72px 0;
+    max-width: 320px;
+    margin: 0 auto;
+
+}
+
 @media screen and (min-resolution: 192dpi) {
     .my-main-page {
-        background-image: linear-gradient(to bottom,
-                    rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)),
-                url(../images/people-office@2.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/backgroundmobile2.jpg');
     }
 }
 
@@ -389,19 +407,6 @@ input {
     align-items: center;
 }
 
-.my-main-page {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-        url('../images/people-office.jpg');
-    background-size: cover;
-    background-color: #2e2f42;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 72px 0;
-    max-width: 320px;
-    margin: 0 auto;
-
-}
 
 .main-page {
     color: #fff;
@@ -424,15 +429,22 @@ input {
 
 
 /* TABLET */
-@media screen and (min-width: 768px) {
+
     .my-main-page {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-        url('../images/people-office2x.jpg');
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url('../images/backgroundtablet1.jpg');
     max-width: 768px;
     margin-top: 112px 0;
-
+    
     }
+   @media screen and (min-width: 768px) {
+.my-main-page {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/backgroundtablet2.jpg');
+}
+
 
     .main-page {
         line-height: 1.07;
@@ -442,16 +454,34 @@ input {
     }
 }
 
+
 /* DESKTOP */
+
+.my-main-page {
+    max-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url('../images/people-office.jpg');
+    padding: 188px 0;
+}
+
 @media screen and (min-width:1158px) {
     .my-main-page {
     max-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/people-office2x.jpg');
     padding: 188px 0;
     }
 
     .main-page {
         margin-bottom: 48px;
     }
+}
+
+@media screen and (min-resolution: 192dpi)
+.my-main-page {
+
 }
  
 /* ADVANTAGES */
@@ -743,6 +773,7 @@ padding: 32px 16px;
 }
 
 .name-service {
+    font-weight: 500;
     color: #2e2f42;
     font-size: 20px;
     line-height: 1.2;
@@ -955,7 +986,7 @@ fill: #f4f4fd;
  }
 
     .text-footer-wrap {
-        padding-left: 108px;
+        padding-left: 124px;
     }
 
 
@@ -1023,6 +1054,7 @@ fill: #f4f4fd;
 
 .backdrop {
     position: fixed;
+    z-index: 100000;
     left: 0;
     top: 0;
     width: 100%;
@@ -1224,8 +1256,6 @@ fill: #f4f4fd;
 }
 
 .order-form-submit-button {
-
-    
 display: block;
     border-radius: 4px;
     border: none;
@@ -1253,6 +1283,17 @@ display: block;
 .order-textarea-wrapper {
     margin-bottom: 16px;
 }
+
+.user-privacy {
+   display: flex;
+}
+
+
+
+
+
+
+
 /* TABLET + DESKTOP */
 @media screen and (min-width: 768px),
 (min-width: 1158px) {
@@ -1290,6 +1331,7 @@ display: block;
         width: 100%;
         height: 100%;
         display: flex;
+        background-color: #fff;
         justify-content: center;
         align-items: center;
         background-color: rgba(46, 47, 66, 0.4);
