@@ -830,6 +830,7 @@ padding: 32px 16px;
     flex-direction: column;
     align-items: center;
     gap: 72px 0;
+    
 }
 
 .footer-container .logo-footer   {
@@ -842,7 +843,9 @@ padding: 32px 16px;
     color: #f4f4fd
 }
 
-
+.foooter-subsription-wrap {
+    padding-left: 92px;
+}
 
 .paragraph-footer {
     display: flex;
@@ -981,19 +984,22 @@ fill: #f4f4fd;
     fill: #ffffff;
     margin-left: 16px;
 }
+
+.text-footer-wrap {
+    padding-left: 92px;
+}
 /* TABLET */
-@media screen and (min-width:768px) {
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
 .footer-page .container {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 72px 24px;
         align-items: baseline;
-        
- }
-
-    .text-footer-wrap {
-        padding-left: 124px;
+        padding-left: 108px;
     }
+
+
 
 
     .footer-page .logo-footer {
@@ -1002,16 +1008,14 @@ fill: #f4f4fd;
     }
 
     .paragraph-footer {
-    min-width: 264px;
+        min-width: 264px;
     }
 
     .social-icons-text {
-    text-align: start;
+        text-align: start;
     }
 
-    .foooter-subsription-wrap {
-    padding-left: 124px;
-    }
+
 
     .foooter-subsription-form {
         flex-direction: row;
@@ -1021,22 +1025,26 @@ fill: #f4f4fd;
     .foooter-subsription-text {
         text-align: start;
     }
- }
+}
+
 /* DESKTOP */
 @media screen and (min-width:1158px) {
     .footer-page {
         padding: 100px 0;
+
     }
 
-        .footer-page .container {
-            flex-direction: row;
-            align-items: baseline;
-            display: flex;
-            flex-wrap: nowrap;
-                gap: 0;
-        }
 
-     .footer-page .logo-footer {
+
+    .footer-page .container {
+        flex-direction: row;
+        align-items: baseline;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .footer-page .logo-footer {
         display: inline-block;
         margin-bottom: 16px;
     }
@@ -1047,13 +1055,15 @@ fill: #f4f4fd;
     }
 
     .social-icons-wrap {
-    margin-right: 80px;
+        margin-right: 80px;
     }
 
     .foooter-subsription-wrap {
-    padding-left: 0;
+        padding-left: 0;
     }
+
 }
+
 
 
 
