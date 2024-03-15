@@ -983,11 +983,12 @@ fill: #f4f4fd;
 }
 /* TABLET */
 @media screen and (min-width:768px) {
-.footer-container {
+.footer-page .container {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 72px 24px;
         align-items: baseline;
+        
  }
 
     .text-footer-wrap {
@@ -1027,12 +1028,15 @@ fill: #f4f4fd;
         padding: 100px 0;
     }
 
-    .footer-container {
-        flex-wrap: nowrap;
-        gap: 0;
-    }
+        .footer-page .container {
+            flex-direction: row;
+            align-items: baseline;
+            display: flex;
+            flex-wrap: nowrap;
+                gap: 0;
+        }
 
-    .footer-container .logo-footer {
+     .footer-page .logo-footer {
         display: inline-block;
         margin-bottom: 16px;
     }
@@ -1050,6 +1054,8 @@ fill: #f4f4fd;
     padding-left: 0;
     }
 }
+
+
 
 /* ORDER-SERVICE */
 /* MOBILE */
